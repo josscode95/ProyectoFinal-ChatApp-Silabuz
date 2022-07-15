@@ -1,13 +1,22 @@
-import useLinked from "./hook/useLinked";
+import React from 'react'
+import { AppRouter } from "./router/AppRouter";
+import { AuthProvider } from './context/AuthContext'
+import { ChatProvider } from './context/chat/ChatContext'
+import { SocketProvider } from './context/SocketContext'
+
+import moment from "moment";
+import "moment/locale/es";
+moment.locale('es');
 
 const App = () => {
-
-  const data = useLinked('http://localhost:4444/scrap-silabuz')
-
   return (
-    <>
-      <h1>Hola Mundo</h1>
-    </>
+    <ChatProvider>
+      <AuthProvider>
+        <SocketProvider>
+          <AppRouter />
+        </SocketProvider>
+      </AuthProvider>
+    </ChatProvider>
   );
 }
 
