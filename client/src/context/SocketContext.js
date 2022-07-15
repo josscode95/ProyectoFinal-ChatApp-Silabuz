@@ -2,15 +2,15 @@ import React, { createContext, useContext, useEffect } from "react";
 
 import { AuthContext } from './AuthContext';
 import { useSocket } from "../hooks/useSocket";
-import { ChatContext } from "./chat/ChatContext";
 import { types } from "../types/types";
 import { scrollToBottomAnimated } from "../helpers/fnScrollBottom";
+import { ChatContext } from "./chat/ChatContext";
 
 export const SocketContext = createContext();
 
 export const SocketProvider = ({ children }) => {
 
-  const { socket, online, conectarSocket, desconectarSocket } = useSocket('http://localhost:6667');
+  const { socket, online, conectarSocket, desconectarSocket } = useSocket('http://localhost:4444');
   const { auth } = useContext( AuthContext )
   const { dispatch } = useContext( ChatContext )
 

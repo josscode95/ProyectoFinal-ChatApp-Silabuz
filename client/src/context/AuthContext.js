@@ -1,7 +1,7 @@
 import React, { createContext, useCallback, useContext, useState } from "react";
-import { ChatContext } from "../context/chat/ChatContext";
-import { fetchConToken, fetchSinToken } from "../helpers/fetch";
+import { fetchSinToken, fetchConToken } from "../helpers/fetch";
 import { types } from "../types/types";
+import { ChatContext } from "./chat/ChatContext";
 
 export const AuthContext = createContext();
 
