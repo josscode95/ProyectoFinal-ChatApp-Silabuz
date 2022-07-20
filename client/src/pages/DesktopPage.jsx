@@ -12,15 +12,13 @@ export const DesktopPage = () => {
   const { chatState } = useContext(ChatContext)
 
   return (
-    <div>
-      <div>
-        <InboxUser />
-        {
-          ( chatState.chatActivo )
-            ? <Messages />
-            : <SelectChat />
-        }
-      </div>
+    <div className='chat-container'>
+      <InboxUser />
+      {
+        ( chatState.chatActivo )
+          ? <Messages />
+          : <SelectChat />
+      }
     </div>
   )
 }

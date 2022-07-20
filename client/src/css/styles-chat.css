@@ -1,0 +1,59 @@
+.chat-container{
+  background-color: red;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  grid-template-rows: 1fr;
+}
+
+.sidebar{
+  background-color: #111b21;
+  grid-column: 1 / 2;
+}
+
+.selectChat{
+  display: grid;
+  grid-column: 2 / 3;
+  align-items: center;
+  background-color: #222e35;
+  height: 100%;
+  padding: 5rem 10rem;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.selectChat > * {
+  height: 100%;
+}
+
+.selectChat h2{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: .1rem;
+  color: #8da5b3;
+}
+
+.selectChat h3{
+  display: grid;
+  align-items: center;
+  text-align: justify;
+  padding: 0 1rem;
+  line-height: 1.7rem;
+  letter-spacing: .1rem;  
+  color: #abc0cc;
+}
+
+.selectChat span{
+  display: grid;
+  align-items: end;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  color: #abc0cc;
+}
+
+.messages{
+  background-color: yellow;
+}

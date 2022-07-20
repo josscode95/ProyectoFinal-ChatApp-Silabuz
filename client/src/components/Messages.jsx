@@ -12,7 +12,7 @@ export const Messages = () => {
   const { auth } = useContext( AuthContext )
 
   return (
-    <div className='mesgs'>
+    <div className='messages'>
       <div 
         id="mensajes"
         className='msg_history'

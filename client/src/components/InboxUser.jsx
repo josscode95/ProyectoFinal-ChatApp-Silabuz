@@ -4,7 +4,7 @@ import { Sidebar } from './Sidebar'
 
 export const InboxUser = () => {
   return (
-    <div>
+    <div className='sidebar'>
       <SearchBox />
       <Sidebar />
     </div>
