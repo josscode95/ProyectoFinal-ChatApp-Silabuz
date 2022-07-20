@@ -31,15 +31,16 @@ export const SendMessage = () => {
   return (
     <form
       onSubmit={ onSubmit }
+      className="messages-container"
     >
       <input
         type="text"
-        placeholder='Mensaje'
+        placeholder='Enviar mensaje...'
         value={ mensaje }
         onChange={ onChange } 
       />
       <button type="submit">
-        enviar
+        Enviar
       </button>
     </form>
   )

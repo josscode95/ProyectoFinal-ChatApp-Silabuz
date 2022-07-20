@@ -107,6 +107,8 @@
   height: 100px;
   background-color: #2a3942;
   border-radius: 1.2rem;
+  margin-bottom: 1rem;
+  margin-left: .5rem;
 }
 
 .chatItem img{
@@ -154,3 +156,103 @@
   grid-template-rows: 90% 10%;
 }
 
+.messages-historial{
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  margin-top: 1rem;
+}
+
+.messages-container{
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+.messages-container input{
+  font-size: 25px;
+  outline: none;
+  letter-spacing: 2px;
+  padding-left: 1rem;
+  background-color: #2a3942;
+  border: none;
+  border-radius: 1rem;
+  margin-left: 1rem;
+}
+
+.messages-container input:focus{
+  transition: .5s;
+  background-color: #3c4952;
+}
+
+.messages-container button{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: rgb(236, 220, 220);
+  border-radius: 1rem;
+  margin: 0 1rem;
+  font-size: 17px;
+}
+
+.messages-container button:hover{
+  transition: .5s;
+  background-color: rgba(0, 0, 0, .5);
+  letter-spacing: 2px;
+}
+
+.messages-out{
+  display: grid;
+  align-items: center;
+  margin-left: 51%;
+  margin-bottom: 1rem;
+  padding-right: 1rem;
+  height: 70px;
+}
+
+.messages-out p{
+  background-color: #4f575c;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.messages-out span{
+  background-color: #4f575c;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: end;
+  padding-right: 1rem;
+}
+
+.messages-inc{
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  height: 70px;
+  display: grid;
+  padding-left: 1rem;
+  align-items: center;
+}
+
+.messages-inc p{
+  background-color: #111b21;
+  margin-right: 50%;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  padding-left: 1rem;
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+}
+
+.messages-inc span{
+  background-color: #111b21;
+  margin-right: 50%;
+  height: 100%;
+  padding-left: 1rem;
+}
