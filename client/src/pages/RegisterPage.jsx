@@ -43,13 +43,13 @@ export const RegisterPage = () => {
   
   return (
     <form 
-      className='flex-sb flex-w'
+      className='container-form__register'
       onSubmit={ onSubmit }
     >
-      <span className='mb-3'>
+      <span className='container-form__title'>
         Chat - Registro
       </span>
-      <div className='mb-3'>
+      <div className='container-form__input'>
         <input
           type="text"
           name="nombre"
@@ -59,7 +59,7 @@ export const RegisterPage = () => {
         />
         <span></span>
       </div>
-      <div className='mb-3'>
+      <div className='container-form__input'>
         <input
           type="email"
           name="email"
@@ -69,7 +69,7 @@ export const RegisterPage = () => {
         />
         <span></span>
       </div>
-      <div className='mb-3'>
+      <div className='container-form__input'>
         <input
           type="password"
           name="password"
@@ -79,19 +79,17 @@ export const RegisterPage = () => {
         />
         <span></span>
       </div>
-      <div className='row mb-3'>
-        <div className='col text-right'>
-          <Link to="/auth/login" className='txt1'>
-            Ya tienes cuenta?
-          </Link>
-        </div>
+      <div className='other-txt-container'>
+        <Link to="/auth/login" className='other-text'>
+          Ya tienes cuenta?
+        </Link>
       </div>
-      <div>
+      <div className='container-form__button'>
         <button
           type='submit'
           disabled={ !todoOk() }
         >
-          Ingresar
+          Registrar
         </button>
       </div>
     </form>

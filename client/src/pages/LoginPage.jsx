@@ -66,13 +66,13 @@ export const LoginPage = () => {
   
   return (
     <form 
-      className='flex-sb flex-w'
+      className='container-form'
       onSubmit={ onSubmit }
     >
-      <span className='mb-3'>
+      <span className='container-form__title'>
         Chat - Ingreso
       </span>
-      <div className='validate-input mb-3'>
+      <div className='container-form__input'>
         <input
           type="email"
           name="email"
@@ -82,7 +82,7 @@ export const LoginPage = () => {
         />
         <span></span>
       </div>
-      <div className='mb-3'>
+      <div className='container-form__input'>
         <input
           type="password"
           name="password"
@@ -92,9 +92,9 @@ export const LoginPage = () => {
         />
         <span></span>
       </div>
-      <div className='row mb-3'>
+      <div className='container-form__other'>
         <div 
-          className='col'
+          className='other-check'
           onClick={ () => toggleCheck() }
         >
           <input
@@ -108,13 +108,16 @@ export const LoginPage = () => {
             Recordarme
           </label>
         </div>
-        <div className='col text-right'>
-          <Link to="/auth/register" className='txt1'>
+        <div className='other-txt-container'>
+          <Link 
+            to="/auth/register" 
+            className='other-text'
+          >
             No tienes cuenta?
-          </Link>
+          </Link>   
         </div>
       </div>
-      <div>
+      <div className='container-form__button'>
         <button
           type='submit'
           disabled={ !todoOk() }

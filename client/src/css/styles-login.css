@@ -1,0 +1,97 @@
+.container-form{
+  background-color: rgb(204, 191, 191);
+  height: 100vh;
+  display: grid;
+  padding: 9rem 33rem;
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.container-form__register{
+  background-color: rgb(204, 191, 191);
+  height: 100vh;
+  display: grid;
+  padding: 9rem 33rem;
+  grid-template-rows: 12% 20% 20% 20% 8% 20%;
+}
+
+.container-form__register > * {
+  background-color: white;
+}
+
+.container-form > * {
+  background-color: white;
+}
+
+.container-form__title{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  letter-spacing: .4rem;
+}
+
+.container-form__input{
+  display: grid;
+  height: 100%;
+}
+
+.container-form__input input{
+  padding-left: 10px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: rgb(59, 56, 56);
+  border: none;
+}
+
+.container-form__input input:focus{
+  transition: .7s;
+  outline: none;
+  font-size: 18px;
+  letter-spacing: 3px;
+  border-bottom: 1px solid black;
+}
+
+.container-form__other{
+  display: grid;
+}
+
+.other-check input{
+  margin: 0 .5rem;
+}
+
+.other-check label{
+  font-size: 17px;
+}
+
+.other-txt-container{
+  height: 100%;
+  padding-left: 50%;
+}
+
+.other-text{
+  display: grid;
+  padding-right: 1rem;
+  font-size: 17px;
+  color: black;
+}
+
+.container-form__button{
+  padding: .3rem 3rem;
+}
+
+.container-form__button button{
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  letter-spacing: .3rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.container-form__button button:hover{
+  transition: .7s;
+  background-color: rgba(0,0,0,.8);
+  letter-spacing: .4rem;
+  font-size: 15px;
+  color: whitesmoke;
+}
