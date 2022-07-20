@@ -4,11 +4,13 @@ import { Routes, Route, Outlet, Navigate } from "react-router-dom";
 import { LoginPage } from '../pages/LoginPage';
 import { RegisterPage } from '../pages/RegisterPage';
 
+import '../css/styles-login.css';
+
 export const AuthRouter = () => {
   return (
-    <div className='limiter'>
-      <div className='container-login100'>
-        <div className='wrap-login100 p-t-50 p-b-90'>
+    <div>
+      <div>
+        <div>
           <Routes>
             <Route exact path="login" element={<LoginPage/>} />
             <Route exact path="register" element={<RegisterPage/>} />

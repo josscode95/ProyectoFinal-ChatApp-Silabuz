@@ -5,14 +5,15 @@ import { InboxUser } from '../components/InboxUser';
 import { Messages } from '../components/Messages';
 import { ChatContext } from '../context/chat/ChatContext';
 
+import '../css/styles-chat.css'
 
 export const DesktopPage = () => {
 
   const { chatState } = useContext(ChatContext)
 
   return (
-    <div className='messaging'>
-      <div className='inbox_msg'>
+    <div>
+      <div>
         <InboxUser />
         {
           ( chatState.chatActivo )
