@@ -10,7 +10,7 @@ export const Sidebar = () => {
   const { auth } = useContext( AuthContext )
 
   return (
-    <div>
+    <div className='contentUsers'>
       {
         chatState.usuarios
           .filter(user => user.uid !== auth.uid)
@@ -21,7 +21,7 @@ export const Sidebar = () => {
             />
           ))
       }
-      <div className='extra-espacio'></div>
+      {/* <div className='extra-espacio'></div> */}
     </div>
   )
 }

@@ -32,21 +32,15 @@ export const SendMessage = () => {
     <form
       onSubmit={ onSubmit }
     >
-      <div className='row'>
-        <div className='col-sm-9'>
-          <input
-            type="text"
-            placeholder='Mensaje'
-            value={ mensaje }
-            onChange={ onChange } 
-          />
-        </div>
-        <div className='col-sm-3 text-center'>
-          <button className='mt-3' type="button">
-            enviar
-          </button>
-        </div>
-      </div>
+      <input
+        type="text"
+        placeholder='Mensaje'
+        value={ mensaje }
+        onChange={ onChange } 
+      />
+      <button type="submit">
+        enviar
+      </button>
     </form>
   )
 }

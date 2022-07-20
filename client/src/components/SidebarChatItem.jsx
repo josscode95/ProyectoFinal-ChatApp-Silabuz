@@ -26,21 +26,17 @@ export const SidebarChatItem = ({ user }) => {
 
   return (
     <div 
-      className={`${ (user.uid === chatActivo) && 'active_chat' }`}
+      className={`chatItem ${ (user.uid === chatActivo) && 'active_chat' }`}
       onClick={ onClick }
     >
-      <div>
-        <div>
-          <img src="https://ptetutorials.com/images/user-profile.png" alt="user_img" />
-        </div>
-        <div>
-          <h5>{ user.nombre }</h5>
-          {
-            (user.online)
-              ? <span className='text-success'>Online</span> 
-              : <span className='text-danger'>Offline</span>
-          }
-        </div>
+      <img src="https://ptetutorials.com/images/user-profile.png" alt="user_img" />
+      <div className='chatItem-user'>
+        <h5>{ user.nombre }</h5>
+        {
+          (user.online)
+            ? <span className='text-success'>Online</span> 
+            : <span className='text-danger'>Offline</span>
+        }
       </div>
     </div>
   )

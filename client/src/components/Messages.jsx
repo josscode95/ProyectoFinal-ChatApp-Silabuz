@@ -15,15 +15,12 @@ export const Messages = () => {
     <div className='messages'>
       <div 
         id="mensajes"
-        className='msg_history'
+        className='messages-historial'
       >
         {
           chatState.mensajes.map(msg => (
             ( msg.para === auth.uid )
-              ? <IncomingMessage 
-                  key={ msg.uid }
-                  msg={ msg }
-                /> //si el id ingresado es igual al id al que se va enviar- es porque estoy recibiendo
+              ? <IncomingMessage key={msg.uid} msg={ msg }/> //si el id ingresado es igual al id al que se va enviar- es porque estoy recibiendo
               : <OutgoingMessage key={msg.uid} msg={ msg }/>
           ))
         }

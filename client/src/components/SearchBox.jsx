@@ -7,20 +7,13 @@ export const SearchBox = () => {
   const { auth, logout } = useContext( AuthContext )
 
   return (
-    <div>
-      <div className='mt-2'>
-        <h4>{ auth.name }</h4>
-      </div>
-      <div>
-        <div>
-          <button 
-            className='btn text-danger'
-            onClick={ logout }
-          >
-            Salir
-          </button>
-        </div>
-      </div>
+    <div className='boxUser'>
+      <h4>{ auth.name }</h4>
+      <button 
+        onClick={ logout }
+      >
+        Salir
+      </button>
     </div>
   )
 }

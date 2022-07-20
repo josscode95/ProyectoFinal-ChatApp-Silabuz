@@ -9,6 +9,48 @@
 .sidebar{
   background-color: #111b21;
   grid-column: 1 / 2;
+  display: grid;
+  grid-template-rows: 10% 90%;
+}
+
+.boxUser{
+  display: grid;
+  grid-template-columns: 70% 30%;
+  border-bottom: 1px solid rgb(168, 154, 154);
+}
+
+.boxUser h4{
+  display: grid;
+  font-weight: 600;
+  font-size: 1.3rem;
+  padding-left: 1rem;
+  align-items: center;
+  letter-spacing: .15rem;
+  color: rgb(170, 167, 163);
+}
+
+.boxUser button{
+  margin: .6rem 1rem;
+  cursor: pointer;
+  background-color: transparent;
+  border-radius: 1rem;
+  color: rgb(170, 167, 163);
+  letter-spacing: 2px;
+}
+
+.boxUser button:hover{
+  background-color: rgb(223, 29, 29);
+  border: 2px solid rgb(153, 19, 19);
+  letter-spacing: 3px;
+  transition: .8s;
+}
+
+.contentUsers{
+  overflow-y: scroll;
+  scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
+  scrollbar-width: thin;
+  padding-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .selectChat{
@@ -54,6 +96,61 @@
   color: #abc0cc;
 }
 
-.messages{
-  background-color: yellow;
+.active-chat{
+  color: #222e35;
 }
+
+.chatItem{
+  display: grid;
+  grid-template-columns: 40% 60%;
+  cursor: pointer;
+  height: 100px;
+  background-color: #2a3942;
+  border-radius: 1.2rem;
+}
+
+.chatItem img{
+  height: 90px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 5px;
+  
+}
+
+.chatItem-user{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.chatItem-user h5{
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  color: rgb(219, 210, 210);
+}
+
+.chatItem-user span{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.text-success{
+  color: green;
+}
+
+.text-danger{
+  color: rgb(201, 14, 14);
+}
+
+.messages{
+  display: grid;
+  height: 100%;
+  background-color: #222e35;
+  grid-template-rows: 90% 10%;
+}
+
